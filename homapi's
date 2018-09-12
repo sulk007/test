@@ -1,0 +1,15 @@
+http://103.253.125.75/new_app/getuser.php?eid="+lg +"&password="+pass+"
+http://103.253.125.75/new_app/getInstallation_data.php?eid=
+http://103.253.125.75/microtek/getPart.php
+http://103.253.125.75/new_app/save_payment.php?eid=
+http://103.253.125.75/new_app/save_part.php?eid=
+http://103.253.125.75/microtek/image_upload.php
+http://103.253.125.75/new_app/save_complaint.php
+http://103.253.125.75/microtek/customer_master.php?eid=
+http://103.253.125.75/new_app/mic_attendence.php
+http://103.253.125.75/new_app/getcustomer_data.php?eid=
+http://103.253.125.75/new_app/getInstallation_closeddata.php?eid=
+http://103.253.125.75/new_app/getmodel.php
+http://103.253.125.75/microtek/complaint_master.php?eid=
+http://103.253.125.75/new_app/installation_data_engwise.php?eid=
+http://103.253.125.75/new_app/mic_eng_attendence_report.php?from="+from+"&to="+to+"&eng_id="+id
