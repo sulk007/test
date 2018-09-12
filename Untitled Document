@@ -1,0 +1,52 @@
+ /* val re = Regex("[^A-Za-z0-9 ]")
+        val reg = Regex("[\n]")
+        val companyname = re.replace(ed_companyname.text.toString().trim(), " ")
+        map["location_name"] = reg.replace(companyname, " ").trim()
+        val address = re.replace(ed_address.text.toString().trim(), " ")
+
+        map["address"] = reg.replace(address, " ").trim()*/
+
+
+/*val gstno = re.replace(ed_gstno.text.toString().trim(), " ")
+        map["gstno"] = gstno.trim()*/
+
+
+
+<RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/img_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/feedback"
+                        android:tint="@color/header_color"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/app_name"
+                        android:layout_above="@+id/tv_notice"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Notice"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/header_color" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/badge_circle"
+                        android:padding="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:text="1"
+                        android:id="@+id/badge"
+                        />
+                </RelativeLayout>
+

@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.candour.cspl1css.coolpaddealerapp.fragments.DOAListFragment">
+
+
+    <TextView
+        android:id="@+id/tv_courier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Courier Name"
+        android:textColor="@color/header_color"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/spinner_courier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shadededitboxbg"
+        android:drawSelectorOnTop="true"
+        android:duplicateParentState="true"
+        android:gravity="start"
+        android:minHeight="40dp"
+        android:spinnerMode="dropdown"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/tv_warehouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="WareHouse"
+        android:textColor="@color/header_color"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/spinner_warehouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shadededitboxbg"
+        android:drawSelectorOnTop="true"
+        android:duplicateParentState="true"
+        android:gravity="start"
+        android:minHeight="40dp"
+        android:spinnerMode="dropdown"
+        android:textSize="15sp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tl_ed_docketno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minHeight="40dp"
+        app:hintTextAppearance="@style/textinput_style"
+        app:theme="@style/textinput_style">
+
+        <EditText
+            android:id="@+id/ed_docketno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_docketno"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColor="@color/header_color"
+            android:textColorHint="@color/header_color"
+            android:digits="aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyY zZ0123456789"
+            android:textSize="15sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="7">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/doalist_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_margin="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:nestedScrollingEnabled="false"/>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_datanot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Not Available"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/doadispatchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/button_bg"
+        android:text="@string/str_submit"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>
